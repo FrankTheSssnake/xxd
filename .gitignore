@@ -1,7 +1,16 @@
 # ccd
 
+## build artifacts
 *.d
 *.o
-*/build/
-*/temp*
+/build/
+/**/build/
+
+## temp files
+*temp*
+
+## test directory
 */tests/
+
+## binaries
+ccd
