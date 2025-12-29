@@ -1,5 +1,7 @@
 # ccd
 
+*.d
+*.o
 */build/
 */temp*
 */tests/
