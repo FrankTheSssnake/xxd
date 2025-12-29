@@ -1,5 +1,5 @@
 CC      := gcc
-CFLAGS  := -Wall -Wextra -Wpedantic -std=c11 -O2 -MMD -MP -D_POSIX_C_SOURCE=200809L
+CFLAGS  := -Wall -Wextra -Wpedantic -std=c11 -g -Og -MMD -MP -D_POSIX_C_SOURCE=200809L
 
 SRC_DIR := src
 BLD_DIR := build
@@ -7,7 +7,7 @@ BLD_DIR := build
 TARGET  := ccd
 
 SRCS := $(SRC_DIR)/main.c \
-        $(SRC_DIR)/help.c \
+        $(SRC_DIR)/utils.c \
 		$(SRC_DIR)/parse.c
 
 OBJS := $(SRCS:$(SRC_DIR)/%.c=$(BLD_DIR)/%.o)
